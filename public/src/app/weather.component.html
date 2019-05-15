@@ -1,0 +1,24 @@
+<fieldset>
+  <div class="container">
+    <div class="row">
+      <div class="container" class="mx-auto">
+        <h2>{{weatherInfo.name}}'s current forecast</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p>Humidity: {{weatherInfo.humidity}}</p>
+        <p>Temperature: {{weatherInfo.temp}} Celsius</p>
+        <p>Temperature High: {{weatherInfo.temp_high}} Celsius</p>
+        <p>Temperature Low: {{weatherInfo.temp_min}} Celsius</p>
+        <p>Status: {{weatherInfo.status}} </p>
+      </div>
+      <div class="col">
+        <div class="container">
+          <img [src]=imgUrl
+            height="100%" width="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+</fieldset>

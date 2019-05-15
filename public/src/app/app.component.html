@@ -1,0 +1,36 @@
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+</head>
+
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Weather Boy</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/']">Moscow</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/saint petersburg']">St. Petersburg</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/novosibirsk']">Novosibirsk</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Below nav -->
+  <div class="container">
+    <h4>Click a city to view the current weather!</h4>
+  </div>
+
+
+</div>
+
+
+<router-outlet></router-outlet>
